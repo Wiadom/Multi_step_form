@@ -538,7 +538,7 @@ input[type="radio"]:checked + .check2::after{
 @media only screen and (max-width:550px){
     .main_content_desktop{
         padding: 7px;
-        min-width: 370px;
+        min-width: 550px;
     }
     .Sidebar_desktop{
         padding-left: 15px;
