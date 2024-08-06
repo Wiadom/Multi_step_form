@@ -158,17 +158,6 @@ body{
     outline: none;
     box-shadow: 0px 0px 3px hsl(206, 94%, 87%)
 }
-/* input.invalid {
-    content: "please input the section";
-    color: red;
-    display: block;
-    background-color: red;
-  } */
-/* Style for step 2 */
-/* .step2_image{
-    height: 5px;
-    width: 5px;
-} */
 input[type="radio"]{
     display: none;
 }
@@ -180,7 +169,6 @@ input[type="radio"]{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    /* margin: 0; Ensure no margin on the container */
     padding: 0px;
     margin-top: 15px;
 }
@@ -189,8 +177,6 @@ input[type="radio"]{
 }
 .step2_label{
     position: relative;
-    /* display: inline-block; */
-    /* margin-top: 20px; */
     padding: 14px 16px 10px 12px;
     width: 80px;
     cursor: pointer;
@@ -206,12 +192,8 @@ input[type="radio"]{
     width: 108px;
     border: 1.8px solid hsla(231, 11%, 63%, 0.3);
     border-radius: 10px;
-    /* margin-right: 10px; */
     
 }
-/* .check2_mobile{
-    display: none;
-} */
 .check2:hover, .check2:focus{
     border: 1.8px solid hsl(243, 100%, 62%);
 }
@@ -594,14 +576,6 @@ input[type="radio"]:checked + .check2::after{
         height: 445px;
     }
     .content{
-        /* padding: 0px;
-        margin: 0px;
-        
-        width: auto;
-        border: 1px solid blue;
-        background-color: blue; */
-        /* display: flex; */
-        /* float: none; */
         box-sizing: border-box;
         min-height: 320px;
         height: auto;
