@@ -30,10 +30,6 @@ function showTab(n) {
       element.style.paddingLeft ="25px";
       element.style.paddingRight ="25px";
     })
-    //document.getElementById("Next_button").innerHTML = "Confirm";
-    //document.getElementById("Next_button").style.backgroundColor = "hsl(243, 100%, 62%)";
-    //document.getElementById("Next_button").style.paddingLeft ="25px";
-    //document.getElementById("Next_button").style.paddingRight ="25px";
   } else {
     Next.forEach(element =>{
       element.innerHTML = "Next Step";
@@ -53,7 +49,6 @@ function showTab(n) {
     let a = 0;
     if(option == 'option1' & option2.checked){
       document.getElementById("step4_details1").innerHTML ="Arcade (Yearly)";
-      //document.getElementById("step4-2_details2").innerHTML ="Change";
       document.getElementById("step4_price").innerText = "$90/yr";
       a = 90;
     } else if(option == 'option1' & !option2.checked){
@@ -173,31 +168,14 @@ function validateForm() {
     const input = document.getElementById(id);
     const errorDiv = document.getElementById(`${id}-error`);
 
-      // x = document.getElementsByClassName("content");
-  // y = x[currentTab].getElementsByTagName("input");
-
   errorDiv.textContent = '';
   input.classList.remove('error');
-  // A loop that checks every input field in the current tab:
-  // for (i = 0; i < y.length; i++) {
-    // If a field is empty...
     if (input.value.trim() === '') {
       input.classList.add('error');
       errorDiv.textContent = `${id.charAt(0).toUpperCase() + id.slice(1)} is required`;
-      // add an "invalid" class to the field:
-      // y[i].className += " invalid";
-      // and set the current valid status to false
       valid = false;
     }
   })
-
-
-
-  // }
-//   If the valid status is true, mark the step as finished and valid:
-//   if (valid) {
-//     document.getElementsByClassName("circle")[currentTab].className += " finish";
-//   }
   return valid; // return the valid status
 }
 inputIds.forEach(id => {
@@ -251,18 +229,12 @@ document.getElementById('check').addEventListener('change', function() {
   const step2 = document.querySelectorAll('.step2_label')
   step2.forEach(details2 => {
   const check_toggle = details2.querySelector('.check2')
-  //const check_toggle_mobile = details2.querySelector('.check2_mobile')
   if (this.checked ) {
     border.style.height = '150px';
-    //check_toggle_mobile.style.height ='72px';
     check_toggle.style.height = 'calc(100%)';
-    
-    // document.getElementById("step4_price").innerText = "12/yrs";
   } else {
     border.style.height = '133px';
     check_toggle.style.height = 'calc(100%)';
-    //check_toggle_mobile.style.height ='61px';
-    // document.getElementById("step4_price").innerText = "20/mo";
   }
 })
 });
