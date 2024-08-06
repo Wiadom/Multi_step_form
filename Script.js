@@ -127,6 +127,8 @@ if (n == (x.length - 2)){
     const option20 = document.getElementById('check');
     if(option20.checked){
       step3_price.textContent = step3_price.getAttribute('date-yearly');
+    }else{
+      step3_price.textContent = step3_price.getAttribute('date-monthly');
     }
   })
 }
